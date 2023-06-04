@@ -3,19 +3,22 @@ fetch('http://localhost:3000/animals')
     .then(animalData => {
 
         animalData.forEach((animal) => {
-            console.log(animal)
+           
+            renderAnimal(animal)
         })
 
         function renderAnimal(animal) {
-            const container = document.createElement('span')
+            const container = document.createElement('div')
             const image = document.createElement('img')
             const secondHeader = document.getElementById('second-header')
     
-            secondHeader.append(container)
+            secondHeader.after(container)
             container.append(image)
-            console.log(secondHeader)
+            
+            
     
             image.src = animal.image
+            image.classList.add('animal-image')
         }
 
 

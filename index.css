@@ -12,6 +12,7 @@ header{
     position: absolute;
     top: 50px;
     left: 0;
+    margin-bottom: 40px
 }
 
 #third-header {
@@ -22,4 +23,11 @@ header{
 
 #second-header, #third-header {
     font-size: 22px
+}
+
+.animal-image {
+    width: 10%;
+    height: auto;
+    display: block;
+    margin-bottom: 5px;
 }
