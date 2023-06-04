@@ -4,8 +4,8 @@
     font-size: 45px;
 }
 
-header{
-    position: relative;
+header-container{
+    margin-bottom: 20px;
 }
 
 #second-header {

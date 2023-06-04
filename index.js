@@ -6,6 +6,7 @@ fetch('http://localhost:3000/animals')
            
             renderAnimal(animal)
         })
+       
 
         function renderAnimal(animal) {
             const container = document.createElement('div')
@@ -15,13 +16,23 @@ fetch('http://localhost:3000/animals')
             secondHeader.after(container)
             container.append(image)
             
-            
-    
             image.src = animal.image
             image.classList.add('animal-image')
         }
-
-
+        
+        function volunteerApp() {
+            const volunteerForm = document.createElement('form')
+            const thirdHeader = document.getElementById('third-header')
+            const formFields = ['Name', 'Email', 'Phone']
+    
+    
+        }
     })
+
+
+        
+    
+
+    
 
    
