@@ -36,10 +36,6 @@ fetch('http://localhost:3000/animals')
 
 
         })
-<<<<<<< HEAD
-   
-        
-=======
 
         function donateButtons(donate) {
             let money = document.getElementById('btn-group')
@@ -59,15 +55,9 @@ fetch('http://localhost:3000/animals')
             donate.append(money)
         }
 
->>>>>>> 01daae0b70ef64859891146b3b5e07091427ef59
+
     })
 
 
 
 
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> 01daae0b70ef64859891146b3b5e07091427ef59

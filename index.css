@@ -63,3 +63,10 @@ header-container{
     cursor: pointer;
 
 }
+
+#btn-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+}
