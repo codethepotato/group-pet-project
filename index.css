@@ -26,7 +26,7 @@ header-container{
 }
 
 .animal-image {
-    width: 10%;
+    width: 200px;
     height: auto;
     display: block;
     margin-bottom: 5px;
@@ -72,4 +72,11 @@ header-container{
 
 #btn-group button {
     margin: 0 5px;
+}
+
+#money {
+    position: fixed;
+    bottom: 150px;
+    left: 50%;
+    transform: translateX(-50%);
 }
