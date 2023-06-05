@@ -1,4 +1,4 @@
-
+//fetching data
 fetch('http://localhost:3000/animals')
     .then((r) => r.json())
     .then(animalData => {
@@ -6,8 +6,9 @@ fetch('http://localhost:3000/animals')
         animalData.forEach((animal) => {
             console.log(animal)
             renderAnimal(animal)
+            moneyDonate()
         })
-
+        //gets the animal pictures to show on DOM
         function renderAnimal(animal) {
             const container = document.createElement('div')
             const image = document.createElement('img')
@@ -16,26 +17,23 @@ fetch('http://localhost:3000/animals')
             const species = document.getElementById("species")
             const description = document.getElementById("desc")
             const imageShow = document.getElementById("imageShow")
-            
+
             secondHeader.after(container)
             container.append(image)
 
             image.src = animal.image
-            image.classList.add('animal-image') 
+            image.classList.add('animal-image')
+            // even listener for animal image and details to show
+            image.addEventListener('mouseover', () => {
 
-            container.addEventListener('mouseover', () => {
-    
                 animalName.textContent = animal.name
                 species.textContent = animal.species
                 description.textContent = animal.description
                 imageShow.innerHTML = ''
                 imageShow.append(image.cloneNode(true))
-
-                
-
             })
         }
-// want to make a function for more modular code 
+        // submit form for volunteering
         const formV = document.getElementById("volunteer-form")
         const urSignup = document.getElementById("volunteer")
         const volunteerList = document.getElementById("volunteer-list")
@@ -47,7 +45,7 @@ fetch('http://localhost:3000/animals')
             newLi.textContent = urSignup.value
             urSignup.value = ''
         })
-
+        //donte buttons to donate
         function donateButtons(donation) {
             let money = document.getElementById('btn-group')
 
@@ -65,21 +63,22 @@ fetch('http://localhost:3000/animals')
 
             donate.append(money)
         }
-        const money = document.getElementById("money")
-      
-         oneDollar.addEventListener('click', (e) => {
-            money.textContent = "Thanks For The Dollar!"
-        })
-
-        fiveDollar.addEventListener('click', () => {
-            money.textContent = "5 Dollars Yayyy!"
-        })
-        tenDollar.addEventListener('click', () => {
-            money.textContent = "10 Dollars WOW!"
-        })
+//function for the donate buttons
+        function moneyDonate() {
+            const moneyContainer = document.getElementById("money")
+            oneDollar.addEventListener('click', (e) => {
+                moneyContainer.textContent = "Thanks For The Dollar!"
+            })
+            fiveDollar.addEventListener('click', () => {
+                moneyContainer.textContent = "5 Dollars Yayyy!"
+            })
+            tenDollar.addEventListener('click', () => {
+                moneyContainer.textContent = "10 Dollars WOW!"
+            })
+        }
 
     })
-   
+
 
 
 

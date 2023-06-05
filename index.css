@@ -1,5 +1,5 @@
 #first-header {
-    color: blue;
+    color: navy;
     text-align: center;
     font-size: 45px;
 }
@@ -30,6 +30,7 @@ header-container{
     height: auto;
     display: block;
     margin-bottom: 5px;
+    
 }
 
 #volunteer-section {
@@ -74,9 +75,11 @@ header-container{
     margin: 0 5px;
 }
 
-#money {
-    position: fixed;
-    bottom: 150px;
+#money-container {
+    position: absolute;
+    bottom: -1000px;
     left: 50%;
-    transform: translateX(-50%);
-}
+  }
+  body {
+    background: rgb(185, 177, 105)
+  }
