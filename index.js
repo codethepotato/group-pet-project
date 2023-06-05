@@ -4,4 +4,3 @@ fetch('http://localhost:3000/animals')
         console.log(animalData)
     })
 
-    console.log('hi')
