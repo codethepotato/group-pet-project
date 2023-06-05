@@ -2,6 +2,7 @@
 fetch('http://localhost:3000/animals')
     .then((r) => r.json())
     .then(animalData => {
+        const animalImagesContainer = document.getElementById('animal-images')
 
         animalData.forEach((animal) => {
 
@@ -13,12 +14,13 @@ fetch('http://localhost:3000/animals')
             const container = document.createElement('div')
             const image = document.createElement('img')
             const secondHeader = document.getElementById('second-header')
-
+            
             secondHeader.after(container)
             container.append(image)
 
             image.src = animal.image
             image.classList.add('animal-image')
+            
         }
 
         const formV = document.getElementById("volunteer-form")
