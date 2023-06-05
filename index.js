@@ -20,13 +20,24 @@ fetch('http://localhost:3000/animals')
             image.classList.add('animal-image')
         }
         
-        function volunteerApp() {
-            const volunteerForm = document.createElement('form')
-            const thirdHeader = document.getElementById('third-header')
-            const formFields = ['Name', 'Email', 'Phone']
-    
-    
-        }
+        const formV = document.getElementById("volunteer-form")
+        const urSignup = document.getElementById("volunteer")
+        const volunteerList = document.getElementById("volunteer-list")
+        
+
+        formV.addEventListener('submit', (e) => {
+            e.preventDefault()
+            const newLi = document.createElement('li')
+            volunteerList.append(newLi)
+            newLi.textContent = urSignup.value
+            urSignup.value = ''
+            
+            
+
+        })
+        
+
+        
     })
 
 
