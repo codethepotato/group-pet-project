@@ -39,7 +39,7 @@ fetch('http://localhost:3000/animals')
 
         })
 
-        function donateButtons(donate) {
+        function donateButtons(donation) {
             let money = document.getElementById('btn-group')
 
             const oneDollar = document.querySelector('oneDollar')
@@ -56,7 +56,12 @@ fetch('http://localhost:3000/animals')
 
             donate.append(money)
         }
-
+        
+        oneDollar.addEventListener('click', (e) => {
+            e.preventDefault()
+            let thanks = document.getElementById('graditude')
+            
+        })
 
     })
 
