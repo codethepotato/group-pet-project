@@ -4,8 +4,8 @@
     font-size: 45px;
 }
 
-header{
-    position: relative;
+header-container{
+    margin-bottom: 20px;
 }
 
 #second-header {
@@ -30,4 +30,21 @@ header{
     height: auto;
     display: block;
     margin-bottom: 5px;
+}
+
+#volunteer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 40px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 20%;
+}
+
+#volunteer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
