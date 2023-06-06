@@ -74,12 +74,11 @@ header-container{
 #btn-group button {
     margin: 0 5px;
 }
-
 #money-container {
     position: absolute;
-    bottom: -1000px;
     left: 50%;
   }
+
   body {
     background: rgb(185, 177, 105)
   }
