@@ -36,8 +36,7 @@ fetch('http://localhost:3000/animals')
             
 
         })
-        
-
+   
         
     })
 
@@ -47,4 +46,3 @@ fetch('http://localhost:3000/animals')
 
     
 
-   
