@@ -80,3 +80,7 @@ header-container{
     left: 50%;
     transform: translateX(-50%);
 }
+
+body {
+    background-color: rgb(236, 193, 111);
+}
